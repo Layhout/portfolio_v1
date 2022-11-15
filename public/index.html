@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Chea Layhout's Website" />
+    <meta name="author" content="Chea Layhout" />
+    <meta property="og:site_name" content="Chea Layhout" />
+    <meta name="og:title" content="Chea Layhout" />
+    <meta property="og:type" content="website" />
+    <meta name="facebook:title" content="Layhout Chea" />
+    <link rel="icon" href="imgs/asset_3_GFM_icon.ico" />
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+        integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Chea Layhout</title>
+</head>
+
+<body class="font-main text-gray-800">
+    <nav class="fixed top-0 w-full bg-white z-30 transition duration-300 dark:bg-primary-900">
+        <div class="container py-4 md:py-6 flex justify-between items-center px-5 lg:px-3">
+            <svg class="w-14 fill-current dark:text-gray-200 hover:text-primary-500 dark:hover:text-primary-500 cursor-pointer transition duration-300"
+                id="logo" preserveAspectRatio="xMidYMid meet" viewBox="0 0 3819 1363"
+                xmlns="http://www.w3.org/2000/svg">
+                <g transform="matrix(.1 0 0 -.1 0 1363)">
+                    <path
+                        d="m6176 13598c-7-18-1400-3083-3095-6811-1694-3728-3081-6780-3081-6783 0-2 1730-4 3844-4h3843l708 1573c389 864 710 1580 713 1590 4 16-100 17-2088 17-1761 0-2091 2-2087 14 3 7 747 1645 1654 3640l1648 3626 14258 2 14258 3 700 1540c385 847 709 1559 719 1583l19 42h-15999-16000z" />
+                    <path
+                        d="m13456 8852c-25-49-4018-8816-4023-8835-5-16 231-17 4903-15l4908 3 718 1579c395 868 718 1583 718 1587 0 5-1422 9-3161 9-3006 0-3161 1-3156 18 3 9 584 1290 1291 2845s1286 2830 1286 2833c0 2-781 4-1735 4h-1734z" />
+                    <path
+                        d="m24986 8828c-12-29-919-2024-2014-4434-1096-2410-1992-4384-1992-4388 0-3 783-5 1741-4l1740 3 647 1423 646 1422h2023c1113 0 2023-2 2023-5s-288-640-640-1414-640-1413-640-1420c0-17 3464-16 3477 2 5 6 913 2001 2018 4432 1104 2431 2010 4423 2012 4428 2 4-780 7-1739 7h-1743l-645-1421c-355-782-649-1423-655-1425-5-2-917-3-2026-2l-2016 3 638 1405c352 773 642 1413 645 1423 5 16-82 17-1735 17h-1741z" />
+                </g>
+            </svg>
+            <ul id="navMenu"
+                class="absolute inset-x-0 top-0 z-40 grid grid-cols-3 gap-10 bg-white dark:bg-primary-900 m-3 p-8 justify-items-center border dark:border-primary-850 rounded-lg transition duration-300 transform origin-top-right opacity-0 scale-0 md:justify-self-center md:opacity-100 md:scale-100 md:gap-0 md:rounded-none md:border-0 md:m-0 md:p-0 md:bg-none md:static md:z-0 md:w-max md:flex md:space-x-6 font-semibold text-sm">
+                <div id="closeNavMenu" class="inline-block absolute z-50 top-2 right-3 cursor-pointer md:hidden">
+                    <i class="fas fa-times text-xl text-primary-500"></i>
+                </div>
+                <li id="link_home"
+                    class="relative hover:text-primary-500 transition duration-300 group dark:text-gray-200 dark:hover:text-primary-500 active_link">
+                    <a href="#home">
+                        <div class="text-center md:hidden">
+                            <i class="fas fa-home text-xl mb-1"></i>
+                        </div>
+                        Home
+                    </a>
+                    <div id="underline"
+                        class="absolute -bottom-1 w-full h-0.5 bg-primary-500 rounded transition duration-300 transform scale-x-0 group-hover:scale-x-100 underline_active">
+                    </div>
+                </li>
+                <li id="link_about"
+                    class="relative hover:text-primary-500 transition duration-300 dark:text-gray-200 dark:hover:text-primary-500 group">
+                    <a href="#about">
+                        <div class="text-center md:hidden">
+                            <i class="fas fa-user text-xl mb-1"></i>
+                        </div>
+                        About
+                    </a>
+                    <div id="underline"
+                        class="absolute -bottom-1 w-full h-0.5 bg-primary-500 rounded transition duration-300 transform scale-x-0 group-hover:scale-x-100">
+                    </div>
+                </li>
+                <li id="link_knowledge"
+                    class="relative hover:text-primary-500 transition duration-300 dark:text-gray-200 dark:hover:text-primary-500 group">
+                    <a href="#knowledge">
+                        <div class="text-center md:hidden">
+                            <i class="fas fa-file-alt text-xl mb-1"></i>
+                        </div>
+                        Knowledge
+                    </a>
+                    <div id="underline"
+                        class="absolute -bottom-1 w-full h-0.5 bg-primary-500 rounded transition duration-300 transform scale-x-0 group-hover:scale-x-100">
+                    </div>
+                </li>
+                <li id="link_services"
+                    class="relative hover:text-primary-500 transition duration-300 dark:text-gray-200 dark:hover:text-primary-500 group">
+                    <a href="#services">
+                        <div class="text-center md:hidden">
+                            <i class="fas fa-briefcase text-xl mb-1"></i>
+                        </div>
+                        Services
+                    </a>
+                    <div id="underline"
+                        class="absolute -bottom-1 w-full h-0.5 bg-primary-500 rounded transition duration-300 transform scale-x-0 group-hover:scale-x-100">
+                    </div>
+                </li>
+                <li id="link_portfolio"
+                    class="relative hover:text-primary-500 transition duration-300 dark:text-gray-200 dark:hover:text-primary-500 group">
+                    <a href="#portfolio">
+                        <div class="text-center md:hidden">
+                            <i class="fas fa-image text-xl mb-1"></i>
+                        </div>
+                        Portfolio
+                    </a>
+                    <div id="underline"
+                        class="absolute -bottom-1 w-full h-0.5 bg-primary-500 rounded transition duration-300 transform scale-x-0 group-hover:scale-x-100">
+                    </div>
+                </li>
+                <li id="link_contact"
+                    class="relative hover:text-primary-500 transition duration-300 dark:text-gray-200 dark:hover:text-primary-500 group">
+                    <a href="#contact">
+                        <div class="text-center md:hidden">
+                            <i class="fas fa-paper-plane text-xl mb-1"></i>
+                        </div>
+                        Contact
+                    </a>
+                    <div id="underline"
+                        class="absolute -bottom-1 w-full h-0.5 bg-primary-500 rounded transition duration-300 transform scale-x-0 group-hover:scale-x-100">
+                    </div>
+                </li>
+            </ul>
+            <div>
+                <i class="fas fa-moon cursor-pointer transition duration-300 text-lg dark:text-gray-200 hover:text-primary-500 dark:hover:text-primary-500"
+                    id="darkModeBtn"></i>
+                <div id="openNavMenu" class="inline-block md:hidden ml-4">
+                    <i
+                        class="fas fa-th-large hover:text-primary-500 cursor-pointer transition duration-300 text-lg dark:text-gray-200"></i>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <main class="mt-10 md:mt-16 dark:bg-primary-900 dark:text-gray-200">
+        <section class="container pb-10">
+            <div class="absolute top-0 w-0 h-0 opacity-0" id="home"></div>
+            <div class="max-w-4xl mx-auto flex flex-col px-6 gap-10 lg:px-0 md:flex-row items-center py-16 relative">
+                <div class=" md:w-6/12 text-center md:text-left">
+                    <h1 class="lg:text-lg font-bold" data-aos="fade-down">Hi, My name is</h1>
+                    <h1 class="font-extrabold text-3xl md:text-4xl lg:text-5xl my-1 md:my-3 tracking-normal"
+                        data-aos="fade-down" data-aos-delay="500">CHEA LAYHOUT</h1>
+                    <p class="text-gray-500 dark:text-gray-400 text-sm lg:text-base" data-aos="fade-in">
+                        A junior web developer who's hunger for experience and knowledge. My ultimate goal is to become
+                        a full stack developer.
+                    </p>
+                    <button class="mt-7 transition duration-300 active:scale-90" data-aos="fade-right"><a
+                            href="#contact" class="btn inline-block">Hire
+                            Me <i class="fas fa-user-plus text-lg ml-2"></i> </a></button>
+                </div>
+                <div class="w-8/12 md:w-6/12 order-first md:order-none" data-aos="fade-left">
+                    <img src="imgs/hero-100.png" alt="" class="w-full">
+                </div>
+                <a href="#about"
+                    class="absolute bottom-0 lg:left-0 flex font-semibold items-center transition duration-300 transform hover:translate-y-2 cursor-pointer justify-self-center">
+                    Scroll down
+                    <i class="fas fa-arrow-down ml-2 text-primary-500"></i>
+                </a>
+            </div>
+        </section>
+        <section class="relative bg-gray-50 dark:bg-[#26200d]">
+            <div class="absolute -top-16 w-0 h-0 opacity-0" id="about"></div>
+            <div class="container">
+                <div class="max-w-4xl mx-auto py-16 px-6 lg:px-0">
+                    <h1 class="text-2xl md:text-3xl lg:text-4xl text-center font-bold">About Me</h1>
+                    <p class="text-center text-xs md:text-sm text-gray-400 dark:text-gray-500 mt-1">My introduction</p>
+                    <div class="flex flex-col md:flex-row items-center mt-14 gap-5 md:gap-14">
+                        <div class="w-8/12 md:w-6/12" data-aos="fade-right">
+                            <img src="imgs/About1.jpg" class="rounded-lg" alt="">
+                        </div>
+                        <div class="md:w-6/12 text-center md:text-left">
+                            <p class="text-gray-500 dark:text-gray-400 text-sm lg:text-base" data-aos="fade-left">
+                                After graduated high school, I decided to choose Computer Science as my major because I
+                                was told it involves mathematics and problems solving. I'm confident that I won't regret
+                                this decision. After all, I am a person who enjoys solving puzzles and riddles. To me,
+                                coding is like playing a puzzle game where I try to assemble parts and make them
+                                functional. I believe that I will be a good use and a valuable student under a right
+                                mentor.
+                            </p>
+                            <div class="flex justify-between my-10 w-10/12 mx-auto md:w-full md:mx-0"
+                                data-aos="fade-left">
+                                <div class="flex flex-col items-center">
+                                    <h1 class="text-xl lg:text-2xl font-bold">1+</h1>
+                                    <span
+                                        class="text-xs lg:text-sm text-gray-500 dark:text-gray-400 text-center">Year<br>experience</span>
+                                </div>
+                                <div class="flex flex-col items-center">
+                                    <h1 class="text-xl lg:text-2xl font-bold">10</h1>
+                                    <span
+                                        class="text-xs lg:text-sm text-gray-500 dark:text-gray-400 text-center">Project<br>completed</span>
+                                </div>
+                                <div class="flex flex-col items-center">
+                                    <h1 class="text-xl lg:text-2xl font-bold">2</h1>
+                                    <span
+                                        class="text-xs lg:text-sm text-gray-500 dark:text-gray-400 text-center">company<br>worked</span>
+                                </div>
+                            </div>
+                            <button class="transition duration-300 active:scale-90" data-aos="fade-up">
+                                <a href="chea_layhout_cv.pdf" download="Chea Layhout's CV"
+                                    class="btn inline-block">download cv
+                                    <i class="fas fa-download text-lg ml-1"></i>
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="relative container">
+            <div class="absolute -top-16 w-0 h-0 opacity-0" id="knowledge"></div>
+            <div class="max-w-4xl mx-auto pt-16 pb-32 px-6 lg:px-0">
+                <h1 class="text-2xl md:text-3xl lg:text-4xl text-center font-bold">Knowledge</h1>
+                <p class="text-center text-xs md:text-sm text-gray-400 dark:text-gray-500 mt-1">My capability</p>
+                <div class="flex flex-col md:flex-row mt-14 gap-10 md:gap-14">
+                    <div class="md:w-6/12">
+                        <div class="flex items-center">
+                            <i class="fa-solid fa-code text-primary-500 lg:text-lg w-9"></i>
+                            <h1 class="text-lg lg:text-xl font-bold">Frontend Development</h1>
+                        </div>
+                        <div class="flex flex-col mt-5 gap-6">
+                            <div class="ml-9 space-y-2">
+                                <div class="flex items-center">
+                                    <i class="fab fa-html5 text-lg w-6"></i>
+                                    <span class="font-semibold text-sm lg:text-base">HTML</span>
+                                    <span class="font-semibold text-gray-400 ml-auto text-sm lg:text-base">90%</span>
+                                </div>
+                                <div class="w-full bg-primary-200 dark:bg-primary-850 h-1.5 rounded overflow-hidden">
+                                    <div class="h-full bg-primary-500" style="width: 90%;" data-aos="slide-right"></div>
+                                </div>
+                            </div>
+                            <div class="ml-9 space-y-2">
+                                <div class="flex items-center">
+                                    <i class="fab fa-css3-alt text-lg w-6"></i>
+                                    <span class="font-semibold text-sm lg:text-base">CSS</span>
+                                    <span class="font-semibold text-gray-400 ml-auto text-sm lg:text-base">85%</span>
+                                </div>
+                                <div class="w-full bg-primary-200 dark:bg-primary-850 h-1.5 rounded overflow-hidden">
+                                    <div class="h-full bg-primary-500" style="width: 85%;" data-aos="slide-right"></div>
+                                </div>
+                            </div>
+                            <div class="ml-9 space-y-2">
+                                <div class="flex items-center">
+                                    <i class="fab fa-js text-lg w-6"></i>
+                                    <span class="font-semibold text-sm lg:text-base">Javascript</span>
+                                    <span class="font-semibold text-gray-400 ml-auto text-sm lg:text-base">80%</span>
+                                </div>
+                                <div class="w-full bg-primary-200 dark:bg-primary-850 h-1.5 rounded overflow-hidden">
+                                    <div class="h-full bg-primary-500" style="width: 80%;" data-aos="slide-right"></div>
+                                </div>
+                            </div>
+                            <div class="ml-9 space-y-2">
+                                <div class="flex items-center">
+                                    <i class="fab fa-react text-lg w-6"></i>
+                                    <span class="font-semibold text-sm lg:text-base">React JS</span>
+                                    <span class="font-semibold text-gray-400 ml-auto text-sm lg:text-base">80%</span>
+                                </div>
+                                <div class="w-full bg-primary-200 dark:bg-primary-850 h-1.5 rounded overflow-hidden">
+                                    <div class="h-full bg-primary-500" style="width: 80%;" data-aos="slide-right"></div>
+                                </div>
+                            </div>
+                            <div class="ml-9 space-y-2">
+                                <div class="flex items-center">
+                                    <i class="fab fa-vuejs text-lg w-6"></i>
+                                    <span class="font-semibold text-sm lg:text-base">Vue JS</span>
+                                    <span class="font-semibold text-gray-400 ml-auto text-sm lg:text-base">50%</span>
+                                </div>
+                                <div class="w-full bg-primary-200 dark:bg-primary-850 h-1.5 rounded overflow-hidden">
+                                    <div class="h-full bg-primary-500" style="width: 50%;" data-aos="slide-right"></div>
+                                </div>
+                            </div>
+                            <div class="ml-9 space-y-2">
+                                <div class="flex items-center">
+                                    <i class="fa-brands fa-php text-lg w-6"></i>
+                                    <span class="font-semibold text-sm lg:text-base">PHP</span>
+                                    <span class="font-semibold text-gray-400 ml-auto text-sm lg:text-base">60%</span>
+                                </div>
+                                <div class="w-full bg-primary-200 dark:bg-primary-850 h-1.5 rounded overflow-hidden">
+                                    <div class="h-full bg-primary-500" style="width: 60%;" data-aos="slide-right"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="md:w-6/12">
+                        <div class="flex items-center">
+                            <i class="fas fa-server text-primary-500 lg:text-lg w-9"></i>
+                            <h1 class="text-lg lg:text-xl font-bold">Backend Development</h1>
+                        </div>
+                        <div class="flex flex-col mt-5 gap-6">
+                            <div class="ml-9 space-y-2">
+                                <div class="flex items-center">
+                                    <i class="fab fa-node-js text-lg w-6"></i>
+                                    <span class="font-semibold text-sm lg:text-base">Node JS</span>
+                                    <span class="font-semibold text-gray-400 ml-auto text-sm lg:text-base">50%</span>
+                                </div>
+                                <div class="w-full bg-primary-200 dark:bg-primary-850 h-1.5 rounded overflow-hidden">
+                                    <div class="h-full bg-primary-500" style="width: 50%;" data-aos="slide-right"></div>
+                                </div>
+                            </div>
+                            <div class="ml-9 space-y-2">
+                                <div class="flex items-center">
+                                    <img src="imgs/firebase_logo_icon_145278.png" style="width: 18px;"
+                                        class="mr-2 filter dark:invert" alt="">
+                                    <span class="font-semibold text-sm lg:text-base">Firebase</span>
+                                    <span class="font-semibold text-gray-400 ml-auto text-sm lg:text-base">30%</span>
+                                </div>
+                                <div class="w-full bg-primary-200 dark:bg-primary-850 h-1.5 rounded overflow-hidden">
+                                    <div class="h-full bg-primary-500" style="width: 30%;" data-aos="slide-right"></div>
+                                </div>
+                            </div>
+                            <div class="ml-9 space-y-2">
+                                <div class="flex items-center">
+                                    <i class="fa-solid fa-database text-lg w-6"></i>
+                                    <span class="font-semibold text-sm lg:text-base">SQL</span>
+                                    <span class="font-semibold text-gray-400 ml-auto text-sm lg:text-base">60%</span>
+                                </div>
+                                <div class="w-full bg-primary-200 dark:bg-primary-850 h-1.5 rounded overflow-hidden">
+                                    <div class="h-full bg-primary-500" style="width: 60%;" data-aos="slide-right"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-10 md:mt-6">
+                    <div class="flex items-center">
+                        <i class="fas fa-plus-square text-primary-500 lg:text-lg w-9"></i>
+                        <h1 class="text-lg lg:text-xl font-bold">Other</h1>
+                    </div>
+                    <div class="ml-9">
+                        <h1 class="mt-2 mb-2 font-bold text-sm lg:text-base">Development</h1>
+                        <div class="flex gap-3 flex-wrap">
+                            <span class="pill_effect" data-aos="fade-up" data-aos-delay="100">Java</span>
+                            <span class="pill_effect" data-aos="fade-up" data-aos-delay="200">C</span>
+                            <span class="pill_effect" data-aos="fade-up" data-aos-delay="300">C++</span>
+                            <span class="pill_effect" data-aos="fade-up" data-aos-delay="400">Python</span>
+                            <span class="pill_effect" data-aos="fade-up" data-aos-delay="600">Golang</span>
+                            <span class="pill_effect" data-aos="fade-up" data-aos-delay="700">SASS</span>
+                            <span class="pill_effect" data-aos="fade-up" data-aos-delay="800">Bootstrap</span>
+                            <span class="pill_effect" data-aos="fade-up" data-aos-delay="900">Material UI</span>
+                            <span class="pill_effect" data-aos="fade-up" data-aos-delay="1000">Tailwind CSS</span>
+                            <span class="pill_effect" data-aos="fade-up" data-aos-delay="1100">Vuetify</span>
+                        </div>
+                        <h1 class="mt-4 mb-2 font-bold text-sm lg:text-base">Design</h1>
+                        <div class="flex gap-3 flex-wrap">
+                            <span class="pill_effect" data-aos="fade-up" data-aos-delay="100">Photoshop</span>
+                            <span class="pill_effect" data-aos="fade-up" data-aos-delay="200">Illustrator</span>
+                            <span class="pill_effect" data-aos="fade-up" data-aos-delay="300">Figma</span>
+                        </div>
+                    </div>
+                </div>
+                <h1 class="text-2xl md:text-3xl lg:text-4xl text-center font-bold mt-16">Qualification</h1>
+                <p class="text-center text-xs md:text-sm text-gray-400 dark:text-gray-500 mt-1">My journey</p>
+                <div class="mt-14 flex justify-evenly">
+                    <span class="text-lg lg:text-xl font-bold cursor-pointer hover:text-primary-500 open" id="tabEd">
+                        <i class="fas fa-graduation-cap mr-1 text-xl lg:text-2xl"></i>
+                        Education
+                    </span>
+                    <span class="text-lg lg:text-xl font-bold cursor-pointer hover:text-primary-500" id="tabExp">
+                        <i class="fas fa-briefcase mr-1 text-xl lg:text-2xl"></i>
+                        Experience
+                    </span>
+                </div>
+                <!-- md+ views -->
+                <div class="hidden md:block">
+                    <div class="mt-32 hidden show" id="education">
+                        <div class="h-0.5 bg-primary-500 flex justify-between items-center relative">
+                            <div class="ml-2 space-x-2 flex">
+                                <div class="w-2 bg-white dark:bg-primary-900 h-1"></div>
+                                <div class="w-2 bg-white dark:bg-primary-900 h-1"></div>
+                                <div class="w-2 bg-white dark:bg-primary-900 h-1"></div>
+                            </div>
+                            <div class="flex flex-col items-center absolute -bottom-1.5"
+                                style="left: 16%; transform: translateX(-50%);">
+                                <h1 class="font-semibold text-sm" data-aos="fade-down" data-aos-delay="100">High School
+                                    Graduation</h1>
+                                <span class="text-xs text-gray-500 dark:text-gray-400 my-1" data-aos="fade-down"
+                                    data-aos-delay="100">Hun sen borey 100 knong</span>
+                                <span class="text-gray-500 dark:text-gray-400 text-sm" data-aos="fade-down"
+                                    data-aos-delay="100"><i class="far fa-calendar-alt mr-2"></i>2018</span>
+                                <div class="w-3.5 h-3.5 rounded-full bg-primary-500 mt-1"></div>
+                            </div>
+                            <div class="flex flex-col items-center absolute -top-1.5"
+                                style="left: 32%; transform: translateX(-50%);">
+                                <div class="w-3.5 h-3.5 rounded-full bg-primary-500 mb-1"></div>
+                                <h1 class="font-semibold text-sm" data-aos="fade-up" data-aos-delay="200">Computer
+                                    Science</h1>
+                                <span class="text-xs text-gray-500 dark:text-gray-400 my-1" data-aos="fade-up"
+                                    data-aos-delay="200">Royal University of Phnom penh</span>
+                                <span class="text-gray-500 dark:text-gray-400 text-sm" data-aos="fade-up"
+                                    data-aos-delay="200"><i class="far fa-calendar-alt mr-2"></i>2018 - 2022</span>
+                            </div>
+                            <div class="flex flex-col items-center absolute -bottom-1.5"
+                                style="left: 50%; transform: translateX(-50%);">
+                                <h1 class="font-semibold text-sm" data-aos="fade-down" data-aos-delay="300">Java classes
+                                </h1>
+                                <span class="text-xs text-gray-500 dark:text-gray-400 my-1" data-aos="fade-down"
+                                    data-aos-delay="300">ETEC Center</span>
+                                <span class="text-gray-500 dark:text-gray-400 text-sm" data-aos="fade-down"
+                                    data-aos-delay="300"><i class="far fa-calendar-alt mr-2"></i>2019 - 2020</span>
+                                <div class="w-3.5 h-3.5 rounded-full bg-primary-500 mt-1"></div>
+                            </div>
+                            <div class="flex flex-col items-center absolute -top-1.5"
+                                style="left: 66%; transform: translateX(-50%);">
+                                <div class="w-3.5 h-3.5 rounded-full bg-primary-500 mb-1"></div>
+                                <h1 class="font-semibold text-sm" data-aos="fade-up" data-aos-delay="400">Web Dev
+                                    Classes</h1>
+                                <span class="text-xs text-gray-500 dark:text-gray-400 my-1" data-aos="fade-up"
+                                    data-aos-delay="400">ETEC Center</span>
+                                <span class="text-gray-500 dark:text-gray-400 text-sm" data-aos="fade-up"
+                                    data-aos-delay="400"><i class="far fa-calendar-alt mr-2"></i>2021 - 2022</span>
+                            </div>
+                            <div class="flex flex-col items-center absolute -bottom-1.5"
+                                style="left: 82%; transform: translateX(-50%);">
+                                <h1 class="font-semibold text-sm" data-aos="fade-down" data-aos-delay="500">There's more
+                                    to come</h1>
+                                <div class="w-3.5 h-3.5 rounded-full bg-primary-500 mt-1"></div>
+                            </div>
+                            <div class="mr-2 space-x-2 flex">
+                                <div class="w-2 bg-white dark:bg-primary-900 h-1"></div>
+                                <div class="w-2 bg-white dark:bg-primary-900 h-1"></div>
+                                <div class="w-2 bg-white dark:bg-primary-900 h-1"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mt-32 hidden " id="experience">
+                        <div class="h-0.5 bg-primary-500 flex justify-between items-center relative">
+                            <div class="ml-2 space-x-2 flex">
+                                <div class="w-2 bg-white dark:bg-primary-900 h-1"></div>
+                                <div class="w-2 bg-white dark:bg-primary-900 h-1"></div>
+                                <div class="w-2 bg-white dark:bg-primary-900 h-1"></div>
+                            </div>
+                            <div class="flex flex-col items-center absolute -bottom-1.5"
+                                style="left: 25%; transform: translateX(-50%);">
+                                <h1 class="font-semibold text-sm" data-aos="fade-down">Software Developer
+                                </h1>
+                                <span class="text-xs text-gray-500 dark:text-gray-400 my-1" data-aos="fade-down">A9
+                                    Online</span>
+                                <span class="text-gray-500 dark:text-gray-400 text-sm" data-aos="fade-down"><i
+                                        class="far fa-calendar-alt mr-2"></i>Jun 2021 - Sep 2021</span>
+                                <div class="w-3.5 h-3.5 rounded-full bg-primary-500 mt-1"></div>
+                            </div>
+                            <div class="flex flex-col items-center absolute -top-1.5"
+                                style="left: 50%; transform: translateX(-50%);">
+                                <div class="w-3.5 h-3.5 rounded-full bg-primary-500 mb-1"></div>
+                                <h1 class="font-semibold text-sm" data-aos="fade-up" data-aos-delay="200">Software and
+                                    App Developer</h1>
+                                <span class="text-xs text-gray-500 dark:text-gray-400 my-1" data-aos="fade-up"
+                                    data-aos-delay="200">Zando Cambodia</span>
+                                <span class="text-gray-500 dark:text-gray-400 text-sm" data-aos="fade-up"
+                                    data-aos-delay="200"><i class="far fa-calendar-alt mr-2"></i>2021 - present</span>
+                            </div>
+                            <div class="flex flex-col items-center absolute -bottom-1.5"
+                                style="left: 75%; transform: translateX(-50%);">
+                                <h1 class="font-semibold text-sm">There's more to come</h1>
+                                <div class="w-3.5 h-3.5 rounded-full bg-primary-500 mt-1"></div>
+                            </div>
+                            <div class="mr-2 space-x-2 flex">
+                                <div class="w-2 bg-white dark:bg-primary-900 h-1"></div>
+                                <div class="w-2 bg-white dark:bg-primary-900 h-1"></div>
+                                <div class="w-2 bg-white dark:bg-primary-900 h-1"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- mobile views -->
+                <div class="flex justify-center md:hidden">
+                    <div class="w-0.5 h-96 bg-primary-500 mt-10 relative hidden show" id="education">
+                        <div class="flex justify-end gap-5 absolute -right-1.5 w-44">
+                            <div class="text-right" data-aos="fade-right" data-aos-delay="100">
+                                <h1 class="font-semibold text-sm">High School Graduation</h1>
+                                <p class="text-xs text-gray-500 dark:text-gray-400 my-1">Hun sen borey 100 knong</p>
+                                <p class="text-gray-500 dark:text-gray-400 text-sm"><i
+                                        class="far fa-calendar-alt mr-2"></i>2018</p>
+                            </div>
+                            <div class="w-4 h-3.5 rounded-full bg-primary-500"></div>
+                        </div>
+                        <div class="flex justify-start gap-5 absolute -left-1.5 top-28 w-44">
+                            <div class="w-5 h-3.5 rounded-full bg-primary-500"></div>
+                            <div class="text-left" data-aos="fade-left" data-aos-delay="200">
+                                <h1 class="font-semibold text-sm">Computer Science</h1>
+                                <p class="text-xs text-gray-500 dark:text-gray-400 my-1">Royal University of Phnom penh
+                                </p>
+                                <p class="text-gray-500 dark:text-gray-400 text-sm"><i
+                                        class="far fa-calendar-alt mr-2"></i>2018 - 2022</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-end gap-5 absolute -right-1.5 top-52 w-44">
+                            <div class="text-right" data-aos="fade-right" data-aos-delay="300">
+                                <h1 class="font-semibold text-sm">Java classes</h1>
+                                <p class="text-xs text-gray-500 dark:text-gray-400 my-1">ETEC Center</p>
+                                <p class="text-gray-500 dark:text-gray-400 text-sm"><i
+                                        class="far fa-calendar-alt mr-2"></i>2019 - 2020</p>
+                            </div>
+                            <div class="w-3.5 h-3.5 rounded-full bg-primary-500"></div>
+                        </div>
+                        <div class="flex justify-start gap-5 absolute -left-1.5 w-44 mt-5" style="top: 70%;">
+                            <div class="w-3.5 h-3.5 rounded-full bg-primary-500"></div>
+                            <div class="text-left" data-aos="fade-left" data-aos-delay="400">
+                                <h1 class="font-semibold text-sm">Web Dev Classes</h1>
+                                <p class="text-xs text-gray-500 dark:text-gray-400 my-1">ETEC Center</p>
+                                <p class="text-gray-500 dark:text-gray-400 text-sm"><i
+                                        class="far fa-calendar-alt mr-2"></i>2021 - present</p>
+                            </div>
+                        </div>
+                        <div class="absolute space-y-3 bottom-2">
+                            <div class="h-1 w-1 bg-white dark:bg-primary-900"></div>
+                            <div class="h-1 w-1 bg-white dark:bg-primary-900"></div>
+                            <div class="h-1 w-1 bg-white dark:bg-primary-900"></div>
+                        </div>
+                    </div>
+                    <div class="w-0.5 h-48 bg-primary-500 mt-10 relative hidden" id="experience">
+                        <div class="flex justify-end gap-5 absolute -right-1.5 w-44">
+                            <div class="text-right" data-aos="fade-right" data-aos-delay="100">
+                                <h1 class="font-semibold text-sm">Software Developer</h1>
+                                <p class="text-xs text-gray-500 dark:text-gray-400 my-1">A9 Online</p>
+                                <p class="text-gray-500 dark:text-gray-400 text-sm"><i
+                                        class="far fa-calendar-alt mr-2"></i>2021 - 2021</p>
+                            </div>
+                            <div class="w-3.5 h-3.5 rounded-full bg-primary-500"></div>
+                        </div>
+                        <div class="flex justify-start gap-5 absolute -left-1.5 top-20 w-44">
+                            <div class="w-5 h-3.5 rounded-full bg-primary-500"></div>
+                            <div class="text-left" data-aos="fade-left" data-aos-delay="200">
+                                <h1 class="font-semibold text-sm">Software and App Developer</h1>
+                                <p class="text-xs text-gray-500 dark:text-gray-400 my-1">Zando Cambodia
+                                </p>
+                                <p class="text-gray-500 dark:text-gray-400 text-sm"><i
+                                        class="far fa-calendar-alt mr-2"></i>2021 - present</p>
+                            </div>
+                        </div>
+                        <div class="absolute space-y-3 bottom-2">
+                            <div class="h-1 w-1 bg-white dark:bg-primary-900"></div>
+                            <div class="h-1 w-1 bg-white dark:bg-primary-900"></div>
+                            <div class="h-1 w-1 bg-white dark:bg-primary-900"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="relative bg-gray-50 dark:bg-[#26200d]">
+            <div class="absolute -top-16 w-0 h-0 opacity-0" id="services"></div>
+            <div class="container">
+                <div class="max-w-4xl mx-auto py-16 px-6 lg:px-0">
+                    <h1 class="text-2xl md:text-3xl lg:text-4xl text-center font-bold">Services</h1>
+                    <p class="text-center text-xs md:text-sm text-gray-400 dark:text-gray-500 mt-1">What I offer</p>
+                    <div class="flex flex-col md:grid md:grid-cols-2 items-start mt-14 gap-5 max-w-3xl mx-auto">
+                        <div data-aos="fade-up" data-aos-delay="100"
+                            class="w-full border border-l-5 border-gray-300 dark:border-primary-850 dark:hover:border-primary-500 hover:border-primary-500 transition duration-300 p-3 pb-0 rounded cursor-pointer group accordion_open"
+                            id="accordion">
+                            <div class="flex items-center">
+                                <i
+                                    class="fas fa-pencil-ruler text-lg lg:text-xl mr-2 text-gray-300 dark:text-primary-850 group-hover:text-primary-500 transition duration-300 open"></i>
+                                <h1 class="lg:text-lg font-bold">UI/UX Design</h1>
+                                <i class="fas fa-chevron-down text-lg lg:text-xl ml-auto transition duration-300 transform text-gray-300 dark:text-primary-850 group-hover:text-primary-500 rotate-180 open"
+                                    id="downArrow"></i>
+                            </div>
+                            <div class="mt-3 ml-6 md:ml-7 max-h-0 overflow-hidden" id="accordionContent">
+                                <ul class="space-y-3">
+                                    <li class="text-sm lg:text-base"><i
+                                            class="fas fa-check-circle mr-2 text-primary-500 text-sm lg:text-base"></i>Responsive
+                                        design for web and mobile</li>
+                                    <li class="text-sm lg:text-base"><i
+                                            class="fas fa-check-circle mr-2 text-primary-500 text-sm lg:text-base"></i>Updated
+                                        design trends and layouts</li>
+                                    <li class="text-sm lg:text-base"><i
+                                            class="fas fa-check-circle mr-2 text-primary-500 text-sm lg:text-base"></i>Necessary
+                                        assets. e.g. Font and icon</li>
+                                    <li class="text-sm lg:text-base"><i
+                                            class="fas fa-check-circle mr-2 text-primary-500 text-sm lg:text-base"></i>Detailed
+                                        guidelines for development</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div data-aos="fade-up" data-aos-delay="200"
+                            class="w-full border border-l-5 border-gray-300 dark:border-primary-850 dark:hover:border-primary-500 hover:border-primary-500 transition duration-300 p-3 pb-0 rounded cursor-pointer group"
+                            id="accordion">
+                            <div class="flex items-center">
+                                <i
+                                    class="fas fa-laptop-code text-lg lg:text-xl mr-2 text-gray-300 dark:text-primary-850 group-hover:text-primary-500 transition duration-300"></i>
+                                <h1 class="lg:text-lg font-bold">Frontend Development</h1>
+                                <i class="fas fa-chevron-down text-lg lg:text-xl ml-auto transition duration-300 transform text-gray-300 dark:text-primary-850 group-hover:text-primary-500"
+                                    id="downArrow"></i>
+                            </div>
+                            <div class="mt-3 ml-6 md:ml-7 max-h-0 overflow-hidden" id="accordionContent">
+                                <ul class="space-y-3">
+                                    <li class="text-sm lg:text-base"><i
+                                            class="fas fa-check-circle mr-2 text-primary-500 text-sm lg:text-base"></i>Responsive
+                                        and User friendly interface</li>
+                                    <li class="text-sm lg:text-base"><i
+                                            class="fas fa-check-circle mr-2 text-primary-500 text-sm lg:text-base"></i>Optimized
+                                        code and easy to read</li>
+                                    <li class="text-sm lg:text-base"><i
+                                            class="fas fa-check-circle mr-2 text-primary-500 text-sm lg:text-base"></i>Minimal
+                                        designs</li>
+                                    <li class="text-sm lg:text-base"><i
+                                            class="fas fa-check-circle mr-2 text-primary-500 text-sm lg:text-base"></i>Bug
+                                        fixing</li>
+                                    <li class="text-sm lg:text-base"><i
+                                            class="fas fa-check-circle mr-2 text-primary-500 text-sm lg:text-base"></i>Single
+                                        page web application</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div data-aos="fade-up" data-aos-delay="300"
+                            class="w-full border border-l-5 border-gray-300 dark:border-primary-850 dark:hover:border-primary-500 hover:border-primary-500 transition duration-300 p-3 pb-0 rounded cursor-pointer group"
+                            id="accordion">
+                            <div class="flex items-center">
+                                <i
+                                    class="fas fa-sitemap text-lg lg:text-xl mr-2 text-gray-300 dark:text-primary-850 group-hover:text-primary-500 transition duration-300"></i>
+                                <h1 class="lg:text-lg font-bold">Backend Development</h1>
+                                <i class="fas fa-chevron-down text-lg lg:text-xl ml-auto transition duration-300 transform text-gray-300 dark:text-primary-850 group-hover:text-primary-500"
+                                    id="downArrow"></i>
+                            </div>
+                            <div class="mt-3 ml-6 md:ml-7 max-h-0 overflow-hidden" id="accordionContent">
+                                <ul class="space-y-3">
+                                    <li class="text-sm lg:text-base"><i
+                                            class="fas fa-check-circle mr-2 text-primary-500 text-sm lg:text-base"></i>RESTful
+                                        API with node js</li>
+                                    <li class="text-sm lg:text-base"><i
+                                            class="fas fa-check-circle mr-2 text-primary-500 text-sm lg:text-base"></i>Interact
+                                        with Mongodb database</li>
+                                    <li class="text-sm lg:text-base"><i
+                                            class="fas fa-check-circle mr-2 text-primary-500 text-sm lg:text-base"></i>Interact
+                                        with MySQL database</li>
+                                    <li class="text-sm lg:text-base"><i
+                                            class="fas fa-check-circle mr-2 text-primary-500 text-sm lg:text-base"></i>User
+                                        authentication and protected routes</li>
+                                    <li class="text-sm lg:text-base"><i
+                                            class="fas fa-check-circle mr-2 text-primary-500 text-sm lg:text-base"></i>Interact
+                                        with Firebase Firestore</li>
+                                    <li class="text-sm lg:text-base"><i
+                                            class="fas fa-check-circle mr-2 text-primary-500 text-sm lg:text-base"></i>File
+                                        storage with Firebase</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="relative container">
+            <div class="absolute -top-16 w-0 h-0 opacity-0" id="portfolio"></div>
+            <div class="max-w-4xl mx-auto py-16 px-6 lg:px-0">
+                <h1 class="text-2xl md:text-3xl lg:text-4xl text-center font-bold">Portfolio</h1>
+                <p class="text-center text-xs md:text-sm text-gray-400 dark:text-gray-500 mt-1">My past works</p>
+                <!-- md+ views -->
+                <div class="mt-14 md:grid grid-cols-2 gap-6 hidden flex-wrap justify-between">
+                    <div class="rounded-lg overflow-hidden relative group border border-gray-300 dark:border-primary-850"
+                        data-aos="fade-down-right">
+                        <div
+                            class="absolute w-full h-full bg-gray-800 bg-opacity-0 hover:bg-opacity-75 transition duration-300 p-4">
+                            <p
+                                class="text-white opacity-0 group-hover:opacity-100 transition duration-300 text-sm lg:text-base">
+                                This is a school group project which I did with two other groupmates. I was the
+                                Developer, I did all the coding and the other two were Director and Adviser.
+                                This System is built for restaurants that are near resort such as Waterfall or
+                                beach. This porject was built with Java.
+                            </p>
+                            <a href="https://drive.google.com/drive/folders/1R_nQDtgyQGGx6SQ5mo7k1eA0ySyUs6zG?usp=sharing"
+                                target="_blank"
+                                class="btn absolute -bottom-14 right-4 transition duration-300 transform group-hover:-translate-y-16">Demo
+                                <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                        <img src="imgs/portfolio.png" alt="">
+                    </div>
+                    <div class="rounded-lg overflow-hidden relative group border border-gray-300 dark:border-primary-850"
+                        data-aos="fade-up-left">
+                        <div
+                            class="absolute w-full h-full bg-gray-800 bg-opacity-0 hover:bg-opacity-75 transition duration-300 p-4">
+                            <p
+                                class="text-white opacity-0 group-hover:opacity-100 transition duration-300 text-sm lg:text-base">
+                                This was my first work as Software Developer at A9 Online. This website was built by
+                                me alone but only the frontend. Frameworks were used for project are React JS and
+                                Tailwind CSS. There are some parts that don't look right, that because the higher up
+                                made some changes.
+                            </p>
+                            <a href="https://a9kh.net/" target="_blank"
+                                class="btn absolute -bottom-14 right-4 transition duration-300 transform group-hover:-translate-y-16 cursor-pointer">demo<i
+                                    class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                        <img src="imgs/a9kh.png" alt="">
+                    </div>
+                    <div class="rounded-lg overflow-hidden relative group border border-gray-300 dark:border-primary-850"
+                        data-aos="fade-down-right">
+                        <div
+                            class="absolute w-full h-full bg-gray-800 bg-opacity-0 hover:bg-opacity-75 transition duration-300 p-4">
+                            <p
+                                class="text-white opacity-0 group-hover:opacity-100 transition duration-300 text-sm lg:text-base">
+                                After got into html, css and javascript, I really interested in css animation. I
+                                created a project
+                                and put everything I learned about css animation into it. It was fun and I got to
+                                discover a lot
+                                new thing while coding this project.
+                            </p>
+                            <a href="https://layhout.github.io/music_visualizer" target="_blank"
+                                class="btn absolute -bottom-14 right-4 transition duration-300 transform group-hover:-translate-y-16">Demo
+                                <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                        <img src="imgs/music_visualizer.png" alt="">
+                    </div>
+                    <div class="rounded-lg overflow-hidden relative group border border-gray-300 dark:border-primary-850"
+                        data-aos="fade-up-left">
+                        <div
+                            class="absolute w-full h-full bg-gray-800 bg-opacity-0 hover:bg-opacity-75 transition duration-300 p-4">
+                            <p
+                                class="text-white opacity-0 group-hover:opacity-100 transition duration-300 text-sm lg:text-base">
+                                361 Cambodia project is web app that I managed the frontend development. My
+                                responsibilities are maintenance the project, create reusable components, install only
+                                necessary dependencies and clean up code. This project is made with Next JS and Tailwind
+                                CSS.
+                            </p>
+                            <a href="https://361-web-nextjs-custom-server.vercel.app/" target="_blank"
+                                class="btn absolute -bottom-14 right-4 transition duration-300 transform group-hover:-translate-y-16">Demo
+                                <i class="fas fa-arrow-right ml-1"></i></a>
+                        </div>
+                        <img src="imgs/361_cam_thumb.png" alt="">
+                    </div>
+                </div>
+                <!-- mobile views -->
+                <div class="md:hidden mt-14 space-y-10">
+                    <div class="flex flex-col items-center gap-5 rounded-lg overflow-hidden border border-gray-300 dark:border-primary-850"
+                        data-aos="fade-right" data-aos-delay="200">
+                        <img src="imgs/portfolio.png" alt="" class="w-full">
+                        <p class="text-sm px-5">
+                            This is a school group project which I did with two other teammates. I was the
+                            Developer, I did all the coding and the other two were Director and Adviser.
+                            This System is built for restaurants that are near resort such as Waterfall or
+                            beach. This project was built with Java.
+                        </p>
+                        <a href="https://drive.google.com/drive/folders/1R_nQDtgyQGGx6SQ5mo7k1eA0ySyUs6zG?usp=sharing"
+                            target="_blank" class="btn mb-5">demo<i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                    <div class="flex flex-col items-center gap-5 rounded-lg overflow-hidden border border-gray-300 dark:border-primary-850"
+                        data-aos="fade-left" data-aos-delay="300">
+                        <img src="imgs/a9kh.png" alt="" class="w-full">
+                        <p class="text-sm px-5">This was my first work as Software Developer at A9 Online. This website
+                            was built by
+                            me alone but only the frontend. Frameworks were used for project are React JS and
+                            Tailwind CSS. There are some parts that don't look right, that because the higher up
+                            made some changes.</p>
+                        <a href="https://a9kh.net/" target="_blank" class="btn mb-5">demo<i
+                                class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                    <div class="flex flex-col items-center gap-5 rounded-lg overflow-hidden border border-gray-300 dark:border-primary-850"
+                        data-aos="fade-right" data-aos-delay="200">
+                        <img src="imgs/music_visualizer.png" alt="" class="w-full">
+                        <p class="text-sm px-5">
+                            After got into html, css and javascript, I really interested in css animation. I created a
+                            project
+                            and put everything I learned about css animation into it. It was fun and I got to discover a
+                            lot
+                            new thing while coding this project.
+                        </p>
+                        <a href="https://layhout.github.io/music_visualizer" target="_blank" class="btn mb-5">demo<i
+                                class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                    <div class="flex flex-col items-center gap-5 rounded-lg overflow-hidden border border-gray-300 dark:border-primary-850"
+                        data-aos="fade-left" data-aos-delay="300">
+                        <img src="imgs/361_cam_thumb.png" alt="" class="w-full">
+                        <p class="text-sm px-5">This was my first work as Software Developer at A9 Online. This website
+                            361 Cambodia project is web app that I managed the frontend development. My
+                            responsibilities are maintenance the project, create reusable components, install only
+                            necessary dependencies and clean up code. This project is made with Next JS and Tailwind
+                            CSS.</p>
+                        <a href="https://361-web-nextjs-custom-server.vercel.app/" target="_blank"
+                            class="btn mb-5">demo<i class="fas fa-arrow-right ml-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="relative bg-gray-50 dark:bg-[#26200d]">
+            <div class="absolute -top-16 w-0 h-0 opacity-0" id="contact"></div>
+            <div class="container">
+                <div class="max-w-4xl mx-auto py-16 px-6 lg:px-0">
+                    <h1 class="text-2xl md:text-3xl lg:text-4xl text-center font-bold">Contact</h1>
+                    <p class="text-center text-xs md:text-sm text-gray-400 dark:text-gray-500 mt-1">Get in touch</p>
+                    <div class="flex mt-14 flex-col md:flex-row gap-10">
+                        <div class="md:w-6/12 flex flex-col gap-7">
+                            <div class="flex items-center" data-aos="fade-right" data-aos-delay="100">
+                                <div class="w-10">
+                                    <i class="fas fa-phone-alt text-primary-500 text-xl lg:text-2xl"></i>
+                                </div>
+                                <div>
+                                    <h1 class="font-bold lg:text-lg">Call me</h1>
+                                    <p class="text-xs lg:text-sm text-gray-500 dark:text-gray-400">+855 96 336 9000</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center" data-aos="fade-right" data-aos-delay="200">
+                                <div class="w-10">
+                                    <i class="fas fa-envelope text-primary-500 text-xl lg:text-2xl"></i>
+                                </div>
+                                <div>
+                                    <h1 class="font-bold lg:text-lg">Email</h1>
+                                    <p class="text-xs lg:text-sm text-gray-500 dark:text-gray-400">
+                                        layhoutworkmail@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center" data-aos="fade-right" data-aos-delay="300">
+                                <div class="w-10">
+                                    <i class="fas fa-map-marker-alt text-primary-500 text-xl lg:text-2xl"></i>
+                                </div>
+                                <div>
+                                    <h1 class="font-bold lg:text-lg">Location</h1>
+                                    <p class="text-xs lg:text-sm text-gray-500 dark:text-gray-400">Phnom penh, Cambodia
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="md:w-6/12">
+                            <form class="flex flex-col gap-5 items-start" method="POST"
+                                action="https://formsubmit.co/layhoutworkmail@gmail.com">
+                                <div class="p-3 md:p-5 bg-primary-100 dark:bg-primary-850 rounded-lg w-full">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" required
+                                        class="w-full outline-none bg-primary-100 dark:bg-primary-850">
+                                </div>
+                                <div class="p-3 md:p-5 bg-primary-100 dark:bg-primary-850 rounded-lg w-full">
+                                    <label for="message">Message</label>
+                                    <textarea id="message" rows="5" name="message" required
+                                        class="w-full outline-none bg-primary-100 resize-none dark:bg-primary-850"></textarea>
+                                </div>
+                                <button class="btn ml-auto" type="submit">Send<i
+                                        class="fas fa-paper-plane ml-1"></i></button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="bg-primary-500 dark:bg-primary-950">
+            <div class="container">
+                <div class="max-w-4xl mx-auto py-10 px-6 lg-px-0">
+                    <div class="flex flex-col md:flex-row gap-10">
+                        <div class="md:w-6/12">
+                            <svg class="w-28 mb-5 fill-current dark:text-gray-200" preserveAspectRatio="xMidYMid meet"
+                                viewBox="0 0 3819 1363" xmlns="http://www.w3.org/2000/svg">
+                                <g transform="matrix(.1 0 0 -.1 0 1363)">
+                                    <path
+                                        d="m6176 13598c-7-18-1400-3083-3095-6811-1694-3728-3081-6780-3081-6783 0-2 1730-4 3844-4h3843l708 1573c389 864 710 1580 713 1590 4 16-100 17-2088 17-1761 0-2091 2-2087 14 3 7 747 1645 1654 3640l1648 3626 14258 2 14258 3 700 1540c385 847 709 1559 719 1583l19 42h-15999-16000z" />
+                                    <path
+                                        d="m13456 8852c-25-49-4018-8816-4023-8835-5-16 231-17 4903-15l4908 3 718 1579c395 868 718 1583 718 1587 0 5-1422 9-3161 9-3006 0-3161 1-3156 18 3 9 584 1290 1291 2845s1286 2830 1286 2833c0 2-781 4-1735 4h-1734z" />
+                                    <path
+                                        d="m24986 8828c-12-29-919-2024-2014-4434-1096-2410-1992-4384-1992-4388 0-3 783-5 1741-4l1740 3 647 1423 646 1422h2023c1113 0 2023-2 2023-5s-288-640-640-1414-640-1413-640-1420c0-17 3464-16 3477 2 5 6 913 2001 2018 4432 1104 2431 2010 4423 2012 4428 2 4-780 7-1739 7h-1743l-645-1421c-355-782-649-1423-655-1425-5-2-917-3-2026-2l-2016 3 638 1405c352 773 642 1413 645 1423 5 16-82 17-1735 17h-1741z" />
+                                </g>
+                            </svg>
+                        </div>
+                        <div class="md:w-6/12">
+                            <p class="text-sm lg:text-base">
+                                Have a project in mind? Send me a message and I
+                                will reach out as soon as possible.
+                            </p>
+                            <a href="https://www.facebook.com/chea.layhout.79" target="_blank" class="mr-3"><i
+                                    class="fab fa-facebook-square text-2xl"></i></a>
+                            <a href="https://github.com/Layhout" target="_blank" class="mt-3"><i
+                                    class="fab fa-github text-2xl mt-3"></i></a>
+                        </div>
+                    </div>
+                    <p class="text-xs font-bold text-center text-gray-500 mt-20 opacity-50" id="copyRight_Statement">
+                        &copy;</p>
+                </div>
+            </div>
+        </footer>
+        <a href="#"
+            class="fixed bottom-5 right-5 px-3 py-2 rounded-lg bg-primary-500 hover:bg-primary-600 transition duration-300 transform translate-y-28"
+            id="scrollUp">
+            <i class="fas fa-arrow-up text-black"></i>
+        </a>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"
+        integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

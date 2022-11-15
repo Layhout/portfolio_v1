@@ -1,0 +1,83 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.underline_active {
+  @apply scale-x-100;
+}
+
+.active_link {
+  @apply text-primary-500 !important;
+}
+
+.btn {
+  @apply py-3 px-5 bg-primary-500 font-bold uppercase hover:bg-[#dab032] transition duration-300 active:scale-90 rounded-lg text-black;
+}
+
+.pill_effect {
+  @apply py-1 px-3 rounded-full bg-gray-200 text-xs lg:text-sm dark:bg-primary-850;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.accordion_open {
+  @apply border-primary-500 !important;
+  @apply pb-3;
+}
+
+.open {
+  @apply text-primary-500 !important;
+}
+
+.nav_opened {
+  @apply opacity-100 scale-100;
+}
+
+.nav_shadow {
+  @apply shadow;
+}
+
+::-webkit-scrollbar {
+  @apply w-2 bg-gray-200 rounded-lg dark:bg-primary-850;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-gray-400 rounded-lg dark:bg-primary-900;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-gray-700 dark:bg-primary-950;
+}
+
+body.dark::-webkit-scrollbar {
+  @apply w-2 bg-primary-950;
+}
+
+body.dark::-webkit-scrollbar-thumb {
+  @apply bg-primary-600;
+}
+
+body.dark::-webkit-scrollbar-thumb:hover {
+  @apply bg-primary-800;
+}
+
+.show {
+  @apply block;
+}
+
+#accordionContent {
+  transition: 0.3s;
+}
+
+.scrollUp_show {
+  @apply bottom-10;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
