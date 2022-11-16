@@ -1326,7 +1326,7 @@ video {
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 300ms;
+  transition-duration: 75ms;
 }
 
 .btn:hover{
@@ -1456,6 +1456,28 @@ body.dark::-webkit-scrollbar-thumb:hover{
 html,
 body {
   overflow-x: hidden;
+}
+
+@media (hover: none) {
+  #sup_hover {
+    display: none;
+  }
+
+  #not_sup_hover {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  #not_sup_hover > div {
+    margin: 0;
+  }
+}
+
+@media (max-width: 767px) and (hover: none) {
+  #not_sup_hover {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
 
 .hover\:translate-y-2:hover{

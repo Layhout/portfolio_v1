@@ -13,7 +13,7 @@
 }
 
 .btn {
-  @apply py-3 px-5 bg-primary-500 font-bold uppercase hover:bg-[#dab032] transition duration-300 active:scale-90 rounded-lg text-black;
+  @apply py-3 px-5 bg-primary-500 font-bold uppercase hover:bg-[#dab032] transition duration-75 active:scale-90 rounded-lg text-black;
 }
 
 .pill_effect {
@@ -80,4 +80,26 @@ body.dark::-webkit-scrollbar-thumb:hover {
 html,
 body {
   overflow-x: hidden;
+}
+
+@media (hover: none) {
+  #sup_hover {
+    display: none;
+  }
+
+  #not_sup_hover {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+
+  #not_sup_hover > div {
+    margin: 0;
+  }
+}
+
+@media (max-width: 767px) and (hover: none) {
+  #not_sup_hover {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }

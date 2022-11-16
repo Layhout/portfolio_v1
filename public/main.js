@@ -124,7 +124,7 @@ AOS.init({
     delay: 300,
     duration: 1000,
     once: true,
-    offset: -500,
+    offset: 100,
 });
 
 // copy right statement
