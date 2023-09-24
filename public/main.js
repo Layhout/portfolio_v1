@@ -129,3 +129,6 @@ AOS.init({
 
 // copy right statement
 document.querySelector("#copyRight_Statement").innerHTML += ` ${new Date().getFullYear()} Chea Layhout. All right reserved`;
+
+// experience
+document.querySelector("#expNum").innerHTML = `${new Date().getFullYear() - 2021}+`
