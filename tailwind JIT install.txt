@@ -22,3 +22,5 @@ module.exports = {
 
 - with tailwind.config.js file
 npx tailwindcss -i ./[source file css].css -o ./[build file css].css --watch
+
+firebase deploy --only hosting
